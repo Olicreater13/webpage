@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <Head>
+        <style>
+            .title-bar {
+                background-color: #10ee09;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                font-size: 24px;
+            }
+        </style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Easy Minecraft Server File Downloads </title>
-        <body>
-            <h1 style="font-family:sans-serif"> Download versions of Forge, Fabric, and Vanilla all from one place </h1>
-        </body>
+        <header class="title-bar">
+            <h1 style="font-family:sans-serif" > Download versions of Forge, Fabric, and Vanilla all from one place </h1>
+        </header>
         <style>
             .download-btn-vanilla {
                 display: inline-block;
@@ -75,14 +84,82 @@
     <a  style="font-family:sans-serif" href="" download="" class="download-btn-paper">Paper Server File Download</a>
 </body>
 <body>
-    <h1> Full version pages</h1>
-    <div class="dropdown">
-        <select id="full-versions-dropdown-menu" onchange="redirectToPage()"
-    </div>
+    <h1 style="font-family:sans-serif"> Full version pages</h1>
+    <style>
+        .download-redirect-vanilla {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .download-redirect-vanilla:hover{
+            background-color: #0056b3;
+        }
+    </style>
+    <button class="download-redirect-vanilla" onclick="redirectToPageVanilla()">Vanilla Full Downloads</button>
     <script>
-        function redirectToPage() {
-            var 
+        function redirectToPageVanilla() {
+            window.location.href = 'vanilla_versions.html';
         }
     </script>
+</body>
+<body>
+    <style>
+        .download-redirect-forge {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .download-redirect-forge:hover{
+            background-color: #0056b3;
+        }
+    </style>
+</body>
+<body>
+    <style>
+        .download-redirect-fabric {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .download-redirect-fabric:hover{
+            background-color: #0056b3;
+        }
+    </style>
+</body>
+<body>
+    <style>
+        .download-redirect-paper {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .download-redirect-paper:hover{
+            background-color: #0056b3;
+        }
+    </style>
 </body>
 </html>        
